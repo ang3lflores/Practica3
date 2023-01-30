@@ -3,7 +3,7 @@
 extern void Configurar_UART0(void)
 {
     SYSCTL->RCGCUART  = (1<<7);   //Paso 1 (RCGCUART) pag.344 UART/modulo0 0->Disable 1->Enable
-    SYSCTL->RCGCGPIO |= (1<<4);     //Paso 2 (RCGCGPIO) pag.340 Enable clock port A
+    SYSCTL->RCGCGPIO |= (1<<4);     //Paso 2 (RCGCGPIO) pag.340 Enable clock port E
     //(GPIOAFSEL) pag.671 Enable alternate function
     
     GPIOE->AFSEL |= (1<<1) | (1<<0);

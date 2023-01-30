@@ -77,10 +77,10 @@ int main(void)
          {
             //GPIOF->DATAma =(1<<3);               //GREEN LED ENCENDIDO
             char * apuntador = &UART7_Sring;
-            apuntador = apuntador + a - 1; // FALTO AGREGAR ESTO
+            apuntador = apuntador + a - 1; // 
             for(k=0;k<=a;k++)
             {
-                text [k] = *(apuntador - k); // es - y no + jeje
+                text [k] = *(apuntador - k); // 
             }
             
          
